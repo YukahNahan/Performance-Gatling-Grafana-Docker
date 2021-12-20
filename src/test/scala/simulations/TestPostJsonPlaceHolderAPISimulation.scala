@@ -10,7 +10,7 @@ import scala.concurrent.duration.DurationInt
 import scala.language.postfixOps
 
 
-class TestPostAPISimulation extends Simulation {
+class TestPostJsonPlaceHolderAPISimulation extends Simulation {
 
   val httpConf = http.baseUrl(baseUrl3)
 

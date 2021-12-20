@@ -20,4 +20,13 @@ object TestAPIRequest {
     .check(status.is(201))
   )
 
+  val testPostJsonPlaceHolderAPI = exec(http("request post")
+    .post(urlPostJSONPLACEHOLDERAPI)
+    .headers(headers)
+    .body( StringBody(
+      """{"title": "automation test","body": "Yukah Nahan","userId": 3}""".stripMargin
+    )).asJson
+    .check(status.is(201))
+  )
+
 }
